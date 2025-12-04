@@ -1,0 +1,67 @@
+## Ignore temporary files, build results, and sensitive data
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio user files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User secrets
+**/appsettings.Development.json
+secrets.json
+
+# Data files (exclude the main CSV, keep sample)
+data/df_VEH120_GB.csv
+data/*.csv
+!data/sample-vehicle-data.csv
+
+# Node modules
+node_modules/
+**/node_modules/
+
+# Frontend build output
+frontend/**/dist/
+frontend/**/build/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.vs/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Package files
+*.nupkg
+*.snupkg
+
+# SQL Server files
+*.mdf
+*.ldf
+*.ndf
+
+# Docker
+docker-compose.override.yml

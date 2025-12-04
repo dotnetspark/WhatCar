@@ -1,0 +1,23 @@
+<Project Sdk="Aspire.AppHost.Sdk/13.0.0">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>what-car</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <SuppressAspireDiagnostics>ASPIRECSHARPAPPS001</SuppressAspireDiagnostics>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.JavaScript" Version="13.0.0" />
+    <PackageReference Include="Aspire.Hosting.Redis" Version="13.0.0" />
+    <PackageReference Include="Aspire.Hosting.SqlServer" Version="13.0.0" />
+  <ProjectReference Include="..\WhatCar.Api\WhatCar.Api.csproj" />
+  <ProjectReference Include="..\WhatCar.ODataApi\WhatCar.ODataApi.csproj" />
+  </ItemGroup>
+
+</Project>
