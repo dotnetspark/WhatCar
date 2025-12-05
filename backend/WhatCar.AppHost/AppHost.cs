@@ -15,7 +15,7 @@ var redis = builder.AddRedis("redis")
     .WithDataVolume()
     .WithLifetime(ContainerLifetime.Persistent);
 
-var csvLoader = builder.AddCSharpApp("csv-loader", "C:/Users/ylrre/source/repos/what-car/tools/CsvLoader.cs")
+var csvLoader = builder.AddCSharpApp("csv-loader", "../../tools/CsvLoader.cs")
     .WithReference(sqlDatabase)
     .WaitFor(sqlDatabase);
 
